@@ -15,13 +15,14 @@ int main(int argc, const char * argv[])
 {
     @autoreleasepool
     {
-        Square *square = [[Square alloc] init];
-        square.Color = RED;
+        Shape *shape = [[Square alloc] initWithSize:4];
         
         Circle *circle = [[Circle alloc] init];
-        circle.Color = BLUE;
+        circle.radius = 3;
         
-        NSLog(@"The color of the square is %@", [square printColor]);
+        shape = circle;
+        
+        NSLog(@"The area is %i", [shape getArea]);
     }
     
     return 0;
