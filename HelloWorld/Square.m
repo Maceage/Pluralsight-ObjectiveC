@@ -11,7 +11,6 @@
 @implementation Square
 
 @synthesize size;
-@synthesize color;
 
 -(id)initWithSize:(int)s
 {
@@ -33,20 +32,6 @@
 -(int)getArea
 {
     return size * size;
-}
-
--(NSString *)printColor
-{
-    switch (color) {
-        case RED:
-            return @"Red";
-        case BLUE:
-            return @"Blue";
-        case GREEN:
-            return @"Green";
-        default:
-            return @"Unknown";
-    }
 }
 
 @end

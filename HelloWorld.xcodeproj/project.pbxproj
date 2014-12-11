@@ -10,6 +10,8 @@
 		069CB5D71A3093FF008BCE2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 069CB5D61A3093FF008BCE2D /* main.m */; };
 		069CB5DE1A30A60D008BCE2D /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 069CB5DD1A30A60D008BCE2D /* Square.m */; };
 		069CB5ED1A39CF5B008BCE2D /* SquareComparer.m in Sources */ = {isa = PBXBuildFile; fileRef = 069CB5EC1A39CF5B008BCE2D /* SquareComparer.m */; };
+		069CB5F11A39DFF2008BCE2D /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = 069CB5F01A39DFF2008BCE2D /* Shape.m */; };
+		069CB5F41A39E0A5008BCE2D /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 069CB5F31A39E0A5008BCE2D /* Circle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		069CB5DF1A30A624008BCE2D /* Square.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
 		069CB5EC1A39CF5B008BCE2D /* SquareComparer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareComparer.m; sourceTree = "<group>"; };
 		069CB5EE1A39CF67008BCE2D /* SquareComparer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareComparer.h; sourceTree = "<group>"; };
+		069CB5EF1A39DFE6008BCE2D /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		069CB5F01A39DFF2008BCE2D /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
+		069CB5F21A39E07F008BCE2D /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		069CB5F31A39E0A5008BCE2D /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +72,12 @@
 				069CB5D61A3093FF008BCE2D /* main.m */,
 				069CB5DD1A30A60D008BCE2D /* Square.m */,
 				069CB5DF1A30A624008BCE2D /* Square.h */,
+				069CB5F21A39E07F008BCE2D /* Circle.h */,
+				069CB5F31A39E0A5008BCE2D /* Circle.m */,
 				069CB5EC1A39CF5B008BCE2D /* SquareComparer.m */,
 				069CB5EE1A39CF67008BCE2D /* SquareComparer.h */,
+				069CB5EF1A39DFE6008BCE2D /* Shape.h */,
+				069CB5F01A39DFF2008BCE2D /* Shape.m */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -130,7 +140,9 @@
 			files = (
 				069CB5DE1A30A60D008BCE2D /* Square.m in Sources */,
 				069CB5ED1A39CF5B008BCE2D /* SquareComparer.m in Sources */,
+				069CB5F41A39E0A5008BCE2D /* Circle.m in Sources */,
 				069CB5D71A3093FF008BCE2D /* main.m in Sources */,
+				069CB5F11A39DFF2008BCE2D /* Shape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

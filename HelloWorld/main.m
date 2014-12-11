@@ -9,21 +9,19 @@
 #import <Foundation/Foundation.h>
 #import "Square.h"
 #import "SquareComparer.h"
+#import "Circle.h"
 
 int main(int argc, const char * argv[])
 {
     @autoreleasepool
     {
-        @try {
-            Square *square = [[Square alloc] initWithSize:5];
-            NSLog(@"The area is %i", [square getArea]);
-        }
-        @catch (NSException *exception) {
-            NSLog(@"Error size was invalid!");
-        }
-        @finally {
-            NSLog(@"Done");
-        }
+        Square *square = [[Square alloc] init];
+        square.Color = RED;
+        
+        Circle *circle = [[Circle alloc] init];
+        circle.Color = BLUE;
+        
+        NSLog(@"The color of the square is %@", [square printColor]);
     }
     
     return 0;
