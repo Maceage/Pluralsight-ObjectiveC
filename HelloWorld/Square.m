@@ -15,6 +15,11 @@
 
 -(id)initWithSize:(int)s
 {
+    if(s <= 0)
+    {
+        @throw [NSException exceptionWithName:@"InvalidSizeException" reason:@"Size was not a positive number" userInfo:nil];
+    }
+    
     self = [super init];
     
     if(self)

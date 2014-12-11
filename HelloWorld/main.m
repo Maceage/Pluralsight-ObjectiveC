@@ -14,18 +14,15 @@ int main(int argc, const char * argv[])
 {
     @autoreleasepool
     {
-        int i = 1;
-        while (i <= 10)
-        {
-            if(i == 5)
-            {
-                i++;
-                continue;
-            }
-            
-            Square *square = [[Square alloc] initWithSize:i];
-            NSLog(@"The area is: %i", [square getArea]);
-            i++;
+        @try {
+            Square *square = [[Square alloc] initWithSize:5];
+            NSLog(@"The area is %i", [square getArea]);
+        }
+        @catch (NSException *exception) {
+            NSLog(@"Error size was invalid!");
+        }
+        @finally {
+            NSLog(@"Done");
         }
     }
     
