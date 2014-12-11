@@ -17,6 +17,12 @@ int main(int argc, const char * argv[])
         int i = 1;
         while (i <= 10)
         {
+            if(i == 5)
+            {
+                i++;
+                continue;
+            }
+            
             Square *square = [[Square alloc] initWithSize:i];
             NSLog(@"The area is: %i", [square getArea]);
             i++;
