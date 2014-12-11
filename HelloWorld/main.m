@@ -21,6 +21,9 @@ int main(int argc, const char * argv[]) {
         int x = biggerSquare.size;
         
         NSLog(@"The value is %i", x);
+        
+        squareA.color = RED;
+        NSLog([squareA printColor]);
     }
     
     return 0;
