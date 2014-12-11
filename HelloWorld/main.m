@@ -7,11 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Square.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Square *square = [[Square alloc] initWithSize:10];
+        
+//        [square setSize:3];
+        
+        square.size = 25;
+        int x = [square getArea];
+        
+        NSLog(@"The value is %i", x);
     }
     
     return 0;
