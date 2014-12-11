@@ -17,5 +17,6 @@
 @property int Color;
 
 -(NSString *)printColor;
+-(int)getArea;
 
 @end

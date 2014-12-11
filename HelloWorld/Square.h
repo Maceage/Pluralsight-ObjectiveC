@@ -16,6 +16,5 @@
 @property int size;
 
 -(id)initWithSize: (int)s;
--(int)getArea;
 
 @end

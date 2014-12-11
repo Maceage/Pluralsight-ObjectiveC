@@ -10,6 +10,6 @@
 
 @interface Circle : Shape
 
-
+@property int radius;
 
 @end

@@ -26,4 +26,9 @@
     }
 }
 
+-(int) getArea
+{
+    return -1;
+}
+
 @end

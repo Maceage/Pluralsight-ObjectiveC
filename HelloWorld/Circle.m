@@ -8,8 +8,13 @@
 
 #import "Circle.h"
 
-@implementation Circle
+@implementation Circle : Shape
 
+@synthesize radius;
 
+-(int) getArea
+{
+    return 3.14 * radius * radius;
+}
 
 @end
