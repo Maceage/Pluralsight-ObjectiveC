@@ -15,14 +15,16 @@ int main(int argc, const char * argv[])
 {
     @autoreleasepool
     {
-        Shape *shape = [[Square alloc] initWithSize:4];
+        id object = [[Square alloc] initWithSize:4];
         
         Circle *circle = [[Circle alloc] init];
         circle.radius = 3;
         
-        shape = circle;
+        object = circle;
         
-        NSLog(@"The area is %i", [shape getArea]);
+        object = [[SquareComparer alloc] init];
+        
+        NSLog(@"The area is %i", [object getArea]);
     }
     
     return 0;
