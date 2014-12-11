@@ -10,20 +10,14 @@
 #import "Square.h"
 #import "SquareComparer.h"
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        Square *squareA = [[Square alloc] initWithSize:10];
-        Square *squareB = [[Square alloc] initWithSize:15];
-        
-        SquareComparer *comparer = [[SquareComparer alloc] init];
-        Square *biggerSquare = [comparer getBigger:squareA and:squareB];
-        
-        int x = biggerSquare.size;
-        
-        NSLog(@"The value is %i", x);
-        
-        squareA.color = RED;
-        NSLog([squareA printColor]);
+int main(int argc, const char * argv[])
+{
+    @autoreleasepool
+    {
+        for (int i = 1; i <= 10; i++) {
+            Square *square = [[Square alloc] initWithSize:i];
+            NSLog(@"The area is: %i", [square getArea]);
+        }
     }
     
     return 0;
