@@ -14,9 +14,12 @@ int main(int argc, const char * argv[])
 {
     @autoreleasepool
     {
-        for (int i = 1; i <= 10; i++) {
+        int i = 1;
+        while (i <= 10)
+        {
             Square *square = [[Square alloc] initWithSize:i];
             NSLog(@"The area is: %i", [square getArea]);
+            i++;
         }
     }
     
